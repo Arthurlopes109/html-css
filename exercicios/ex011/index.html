@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTMNL5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em varios dispositivos
+       diferentes ou simplimente diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png"><!--imagan pra celular-->
+        <!-- se reparar bem isso esta em ordem cresente o de cima é o menor e abaixo vai aumentando! -->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"><!--imagen pra tablet-->
+        <img src="imagens/foto-g.png" alt="imagem flexivel"><!--imagen pra computador-->
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+   <!-- uma das formas de colocar audio no site <audio src="media/guanacast-33.mp3" controls autoplay></audio>
+    para uma completa compatibilidade tem esse outro formatos de audio:mp3,wav.ogg-->
+    <audio preload="metadata"controls loop>
+        <source src="media/guanacast-33.mp3" type="audio/mpeg"><!--é assim que tem que se caso for do tipo mp3-->
+        <source src="media/guanacast-33.ogg" type="audio/ogg"><!--exmplo caso fosse do tipo OGG-->
+        <source src="media/guanacast-33.wav" type="audio/wav"><!--exemplo caso fosse do tipo WAV!!!! tente evitar esse tipo de aquivo! pois ele é muito pesado.-->
+        <p>Infelizmente o seu navegador não consegue reproduzir <a href="media/guanacast-33.mp3">Clique aqui para baixar o aquivo MP3</a></p>
+    </audio>
+</body>
+</html>

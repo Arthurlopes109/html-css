@@ -1,0 +1,43 @@
+@charset "UTF8";
+
+/* em HTML é id em CSS é # 
+   em HTML é class em CSS é .
+*/
+
+body{
+    background-color:rgb(144, 143, 196);;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1#principal{
+    background-color: rgb(78, 78, 102);
+    color:white ;
+    text-align: center;
+}
+
+h1{
+    color: rgb(43, 37, 37) ;
+    text-align: center;
+    
+}
+
+.basico{
+    color: yellow ;
+}
+
+.intermediario{
+    color: blue;
+}
+
+.avançado{
+    color: red;
+}
+
+.destaque{
+    background-color: bisque;
+}
+
+p{
+ text-align: justify;
+
+}
