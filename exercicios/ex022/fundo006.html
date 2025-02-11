@@ -3,19 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
-        body{height: 100vh;
-           background-color: black;
+           body{
+           height: 100vh;
+           /*background-color: black;
            background-image: url('imagens/wallpaper002.jpg');
            background-position: center center;
            background-repeat: no-repeat;
-           background-size: cover;/*o valor cover faz a imagem cobrir a view port do navegador inteira mas corta pedaços da imagens dependendo do tamanho da view port!*/
+           background-size: cover;o valor cover faz a imagem cobrir a view port do navegador inteira mas corta pedaços da imagens dependendo do tamanho da view port! */
+           /* background-attachment:fixed ; */
+
+           /* shorthand - background
+            colo> img> position> repeat> [size]> attachment
+           */
+           background: black url('imagens/wallpaper002.jpg') center center/cover no-repeat fixed; /*pq tem uma barra entre position e size eu não sei mas ta funcionado assim então foda-se!*/
+
+           /*aparentemente para o cover funcionar como uma shorthand tem que ter essa barra ali entre o center e o cover.
+           [o cover tem obrigatoriamente que vir antes do no-repeat para funcionar como shorthand!!!]
+           */
+        
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid darkblue;
@@ -27,6 +39,9 @@
     <main>
      <h1>Teste de imagens de fundo</h1>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.</p>   
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.</p>   
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sint iste veniam aperiam placeat? Debitis, repudiandae asperiores? Eos repudiandae, architecto repellendus minus sit facere illo maiores rerum quibusdam optio aut.</p>      
     </main>
 </body>
 </html>
