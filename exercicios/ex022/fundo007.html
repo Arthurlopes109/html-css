@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            position: relative; /*todo posicionamento de um box em html é ralativo*/
+            height: 95vh;
+            background-color: purple;
+            padding: 10px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        }
+
+        #conteudo{
+            position: absolute; /*quando adicionado o valor absolute em um elemento é possivel configurar duas propiedades chamadas left e right. */
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%); 
+
+            /*transform: translate(20px, 20px);o primeiro 20px faz o contrario do letf no caso vai para a direita, e o segundo 20px faz o contrario do top no caso vai pra baixo. 
+
+            Pode-se usar tanto valores positivos quanto negativos nessa tag e usando os negativos eles fazem o contrario dos positivos no caso os positivos vão para right bottom e os negativos para left top.
+            */
+
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <section id="container"><!-- div semantica-->
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
