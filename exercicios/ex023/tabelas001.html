@@ -11,22 +11,22 @@
 
         table{
             width: 400px;
+            height: 400px;
             border-collapse: collapse; /*separate é o valor normal*/
-            border: 5px solid blue ;
         }
 
-        tr.linha{
-            background-color: aqua;
-        }
 
         td{
             padding:5px;
             border: 1px solid black;
+            text-align: center;/*alinhamento horizontal*/
+            vertical-align: top; /*alinhamento vertical/ valor central se chama middle*/
         }
 
-        td.dado{
-            background-color: chartreuse;
+        .numero{
+            text-align: right;
         }
+       
     </style>
 </head>
 <body>
@@ -41,17 +41,17 @@
         <tr><!--tag table row Primeira linha -->
             <td>A1</td><!--tag table data-->
             <td>B1</td>
-            <td>C1</td>
+            <td class="numero">C1</td>
         </tr>
-        <tr class="linha">
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
         <tr>
             <td>A3</td>
-            <td class="dado">B3</td>
-            <td>C3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
         </tr> 
         <tr>
             <td>A4</td>
