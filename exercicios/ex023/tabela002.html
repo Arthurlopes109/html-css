@@ -39,6 +39,18 @@
             background-color:rgb(114, 113, 113);
             color: white;
         }
+
+        tbody > tr:nth-child(ood){ /*se usar (odd) q significa impar em inglês somente as celulas impares vão ficar com a config correspondente.*/
+
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /*even(par) em inglês*/
+            /*esse nth-child é uma pseud class diferente da convencional. usar (2n) significa que o 2 de cada linha recebe o background color.
+            Se colocar um (2n-) faz com que as celulas numero 1 recebam a config.*/
+        
+            background-color: lightgray;
+         }/*Usar odd e even simultaneamente é mais valido quando o fundo da pagina não corresponde com o fundo que vc que q tenha na tabela. */
     </style>
 </head>
 <body>
