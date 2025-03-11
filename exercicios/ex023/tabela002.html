@@ -12,6 +12,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;/*isso é absolutamente nessesario para poder fixar o cabeçalho em tabelas com muito conteudo.*/
         }
 
         caption{
@@ -33,6 +34,12 @@
         thead{
             background-color: rgb(114, 113, 113);
             color: white;
+        }
+
+        thead > tr > th{
+            background-color: rgb(114, 113, 113);
+            position: sticky; /*stick colar*/
+            top: -1px;
         }
 
         tfoot{
