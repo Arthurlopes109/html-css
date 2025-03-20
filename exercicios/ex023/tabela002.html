@@ -67,11 +67,16 @@
         <caption>População das Uninades Federativas</caption>
         <thead>
             <tr>
-                <th scope="col">Estado</th>
+                <th scope="col">Estado</th> <!--scope th de coluna-->
                 <th scope="col" style="width: 50px;">População</th>
            </tr>
-           <!-- esse scope ="col" serve para o algoritimo ter mais facilidade em analisar as colunas -->
-        </thead>
+        </thead> 
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th><!--scope th de Linha-->
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
         <tbody>
              <tr>
                 <td>São Paulo</td>
@@ -182,12 +187,7 @@
                 <td class="num">605.761</td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>210.147.125</strong></td>
-            </tr>
-        </tfoot>
+       
     </table>
 </body>
 </html>
