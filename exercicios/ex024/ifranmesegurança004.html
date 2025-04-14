@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes segurança</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit officia labore a quasi tempore est praesentium temporibus sint accusantium, dolores perferendis eius tenetur asperiores enim alias? Voluptatum ipsam alias animi!</p>
+
+    <iframe src="paginas-extras/paginna004.html" sandbox="sandbox" referrerpolicy="no-refere">
+     <p>
+        mas vamos imaginar que nesse caso pra esse site eu queira deixar que ele execute esse formulario o que eu faço? 
+        simples é so desligar algumas config no 
+        sandbox tipo essas = [sandbox="allow-same-origin"] (isso permite conteudos de mesma origem)
+        vc também pode colocar outra config no sandbox só dando uma espaço e colocando as outra assim = sandbox="allow-same-origin allow-forms allow-scripts"
+
+        (allow-forms = permite formularios)
+
+        (allow-scripts =permite os scripts que rodam no html)
+     </p>
+
+    <p>sandbox=sandbox o que faz? bloquei todo e qualquer ascesso que outros site que estam no iframe tentem fazer pelo iframe.</p>
+
+    <p>referrerpolicy="no-refere-when-downgrade" valor padrão.
+
+        referrerpolicy="no-refere" serve para que o que está carregado dentro do iframe não colete nenhuma informção do usuario.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita suscipit perspiciatis aliquam sit voluptatum accusamus vel qui mollitia esse, in debitis fugiat, quae eos? Officiis laboriosam voluptatum tenetur impedit eius!</p>
+</body>
+</html>
