@@ -7,5 +7,27 @@
 </head>
 <body>
     <h1>Exemplo de fomulario com email e número de telfone.</h1>  
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>  <!--faz um agrupamendo de dados. ex=no caso abaixo são dados pessoais-->
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="20">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx)xxxx-xxxx" pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$">
+                <!--regular expression in html < javascript  -->
+            </p>
+             <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
