@@ -23,13 +23,18 @@ header > h1{
 article{
     display: block;
     width: 600px;
-    text-align: justify;
     margin: auto;
     line-height: 1.5em;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 article > h2{
     line-height: 1.8em;
+}
+
+p{
+    margin: auto;
+    text-align: center;
+    text-align: justify;
 }
 
 menu ul{
