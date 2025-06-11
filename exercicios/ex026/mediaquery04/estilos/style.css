@@ -42,7 +42,7 @@ img{
 }
 
 img#phone{ display: block;}
-#tablet{ display: none;}
-#print{ display: none;}
-#pc{ display: none;}
-#tv{ display: none;}
+img#tablet{ display: none;}
+img#print{ display: none;}
+img#pc{ display: none;}
+img#tv{ display: none;}
