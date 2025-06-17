@@ -20,8 +20,22 @@ h1{
     text-align: center;
 }
 
+#icone{
+   background-color: rgb(71, 71, 71); 
+   color: white;
+   display: block;
+   text-align: left;
+   padding: 10px;
+}
+
+#icone:hover{
+    background-color: rgb(185, 185, 185);
+    color: black ;
+    cursor: pointer;
+}
+
 menu{
-    display: block;
+    display: none;
     
 }
 
@@ -41,6 +55,8 @@ menu a{
 
 menu a:hover{
     background-color: grey;
+    color: black;
+    cursor: pointer;
 }
 
 main{
