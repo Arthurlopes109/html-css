@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Mobile first */
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -24,7 +26,6 @@ h1{
    background-color: rgb(71, 71, 71); 
    color: white;
    display: block;
-   text-align: left;
    padding: 10px;
 }
 
@@ -47,7 +48,6 @@ menu a{
     display: block;
     padding: 10px;
     text-decoration: none;
-    text-align: left;
     background-color: rgb(75, 75, 75);
     color: white;
     border: 1px solid rgb(53, 53, 53);
@@ -60,7 +60,7 @@ menu a:hover{
 }
 
 main{
-    width: 95vw;
+    width: 90vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;

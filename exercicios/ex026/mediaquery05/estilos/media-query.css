@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device breakpoints valores atuais de 11/06/2025
+-------------------------------
+    Celular: de 576px até 768px
+
+    Tablet: de 768px até 992px
+
+    Desktop: de 992px até 1200px
+
+    TV: de 1200px e acima
+-------------------------------
+*/
+
+
+@media screen and (min-width: 768px) {
+    #icone{
+        display: none;
+    }
+
+    menu{
+        display: block;
+        background-color: rgb(94, 94, 94);
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main{
+        max-width: 900px;
+    }
+}
