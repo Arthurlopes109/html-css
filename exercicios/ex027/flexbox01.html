@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com flexbox</title>
+    <style>
+        div.conteiner{
+            background-color: lightblue;
+            display: flex;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid black;
+            flex: auto; /*ao ser colocado os itens ocupam todo o espaço disponivel ao mesmo tempo que ocupam o menor espaço sendo flexiveis*/
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
