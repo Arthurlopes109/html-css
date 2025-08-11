@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Versão Mobile */
+
+body{
+    background-image:linear-gradient(to left, rgb(48, 41, 48), rgb(111, 111, 117));
+}
+
+header{
+    box-sizing: border-box;
+    
+}
+
+header > h1{
+    flex-basis: 60px;
+}
+
+header, header > nav {
+    flex-flow: column;
+}
+
+header > nav > a {
+    width: 90vw;
+}
+
+
+main > section {
+    flex-basis: 500px;
+}
