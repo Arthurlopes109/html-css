@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+header > p {
+    margin-top: 5px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+main {
+    background-color: rgba(128, 128, 128, 0.527);
+    padding: 10px;
+    line-height: 25px;
+    text-align: justify;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section#items{
+    
+}
+
+section > h2 {
+    margin-bottom: 5px;
+}
+
+section > p {
+    margin-bottom: 10px;
+}
