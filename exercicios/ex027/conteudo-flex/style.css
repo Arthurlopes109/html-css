@@ -21,6 +21,10 @@ header, section.normal{
     padding: 20px;
 }
 
+h1, h2{
+    margin-bottom: 10px;
+}
+
 section.flex-content{
     background-color: rgba(119, 136, 153, 0.733);
     padding: 20px;
