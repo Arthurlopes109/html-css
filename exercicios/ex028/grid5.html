@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simplificadores</title>
+    <title>Grid layout na pratica</title>
     <style>
         div.container{
-          display: grid;  
-          /* grid-template-columns: auto auto auto;
-          grid-template-rows: 100px 100px 100px; */
-          grid-template: 100px 100px 100px / auto auto auto;
-          gap: 10px;
-         
-          /* align-items: stretch;
-          justify-items: center;*/
-          place-items: stretch center;
+            border: 2px solid blue;
+            height: 200px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
 
-          place-content: start end;
-          /* align-content: start;
-          justify-content:end ;  */
+            align-items:stretch;
+            justify-items: stretch;
 
+            align-content: space-around;
+            justify-content: stretch;
         }
-
         div.item{
-            border: 1px solid black;
+            border: 2px solid red;
             text-align: center;
         }
     </style>
@@ -36,6 +33,8 @@
         <div class="item">D</div>
         <div class="item">E</div>
         <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
     </div>
 </body>
 </html>

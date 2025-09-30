@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propriedades para grid container</title>
+    <title>Grid Pratica das novas config</title>
     <style>
         div.container{
-          display: grid;  
-          grid-template-columns: auto auto auto; /*Calcula automaticamente para que três colunas surjam e que tenham o mesmo tamanho*/
-          grid-template-rows: 100px 100px 100px;/*define o tamanho das linhas*/
-          gap: 10px;/*define o espaçamento que tera entres o elementos em todas as linhas e colunas*/
+            display: grid;
+            border: 3px solid red;
+            height: 200px;
+            grid-template:repeat(3, auto) / repeat(3, auto);
+            gap: 5px;
+            place-items: start center;
+            place-content: space-between end;
+            
         }
-
         div.item{
-            border: 1px solid black;
-            text-align: center;
+            border: 3px solid blue;
         }
     </style>
 </head>
@@ -26,6 +28,8 @@
         <div class="item">D</div>
         <div class="item">E</div>
         <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
     </div>
 </body>
 </html>
