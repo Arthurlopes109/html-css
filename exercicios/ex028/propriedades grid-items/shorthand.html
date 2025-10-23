@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area em pratica</title>
+    <style>
+           div.container{
+            border: 3px solid blue;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4, 100px);
+            
+        }
+        div.caixa1{
+            background-color: blueviolet;
+            /* grid-row: 3 / 5;
+            grid-column:1 / 5; */
+            grid-area: 3 / 1 / 5 / 5;
+        }
+        div.caixa2{
+            background-color: burlywood;
+            /* grid-row:1 / span 2;
+            grid-column:1 / span 2; */
+            grid-area: 1 / 1 / span 2 / span 2;
+        }
+        div.caixa3{
+            background-color: chocolate;
+            /* grid-row:1 / span 2;
+            grid-column:3 / span 2; */
+            grid-area: 1 / 3 / span 2 / span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa1">Caixa 01</div>
+        <div class="caixa2">Caixa 02</div>
+        <div class="caixa3">Caixa 03</div>
+    </div>
+</body>
+</html>
